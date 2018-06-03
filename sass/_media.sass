@@ -1,0 +1,470 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .main-form
+    .offers__btn
+      flex-direction: column
+      .form_phone
+        margin: 20px 0
+  .header__form
+    width: 100%
+  .offer__block
+    justify-content: center
+  .offers__item:nth-child(3n)
+    margin-right: 30px
+  .offers__item:nth-child(2n)
+      margin-right: 0
+  .suggestion__block
+    justify-content: center
+  .nav-list
+    li
+      margin-right: 25px
+  .welcome
+    .map
+      height: 76%
+  .doctors
+    .slide-flower, .fallen-slide-flower, .big-flower
+      display: none
+
+  .offers__btn
+    label#phone-error
+      bottom: -10px
+  .main__offers 
+    select
+      margin-left: 0px
+      max-width: 100%    
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+  .example
+    form
+      .header__input
+        margin-right: 0px
+  .cosmetic_item
+    &:nth-child(4)
+      border-right: none
+  .offer-form
+    flex-direction: column
+  .main-form__content
+    ul
+      column-count: 1
+      margin-top: 10px
+
+  .hamburger
+    display: block
+    z-index: 1001
+    right: 0
+    top: 20px
+  .doctors--wrapper
+    padding: 0
+  .item__right
+    padding: 0
+  .example
+    form
+      flex-direction: column
+      align-items: center
+  .item__right_top
+    margin-top: 30px
+  #sync1 .item__left
+    width: 100%
+  #sync1 .item__right
+    width: 100%
+    padding: 0
+  .item__right_top
+    text-align: center
+  #sync1 .item__right_top h3
+    text-align-last: center
+  #sync2
+    padding: 0 100px
+    .item
+      h3
+        font-size: 16px
+      p
+        font-size: 12px
+  .owl-next
+    right: 0
+    z-index: 1000
+  .owl-prev
+    left: 0
+    z-index: 1000
+  .welcome
+    form
+      & .header__input
+        width: 100%
+        padding: 10px
+  #sync1 .item__left img
+    width: 50%
+  .item
+    flex-direction: column
+    align-items: center
+  .footer
+    .nav-list
+      display: none
+  .hamburger-box
+    right: 0
+
+  .is-active
+    right: 15px
+    top: 25px
+    .hamburger-inner,
+    .hamburger-inner:after,
+    .hamburger-inner:before
+      background-color: #000
+  .skin
+    button
+      margin: auto
+
+  .header
+    &__top-block
+      display: flex
+      justify-content: space-between
+    &__nav
+      display: block
+      padding-left: 20px
+      width: 270px
+      flex-direction: column
+      position: fixed
+      right: -270px
+      top: 0
+      z-index: 1000
+      height: 100vh
+      background-color: #fff
+      transition: all .3s
+      #menu
+        display: flex
+        flex-direction: column
+        margin-top: 80px
+
+        li
+          margin-bottom: 10px
+          a
+    &__nav-active
+      right: 0
+      display: flex
+      flex-direction: column
+    &__call
+      margin-right: 50px
+
+  .header_guarantees-bold
+    font-size: 16px
+    text-align: center
+  .header_guarantees
+    font-size: 14px
+    text-align: center
+
+  h1
+    line-height: 1.7
+    text-align: center
+  .suggestions
+    padding-bottom: 20px
+
+  .suggestions__item:nth-child(2n)
+     margin-right: 0
+  .header__form_content
+    text-align: center
+    padding: 20px 20px 20px
+    p
+      margin-bottom: 15px
+  .flower
+    display: none
+  .offer__block
+    padding-left: 0
+  .proposal
+    padding-top: 20px
+  .experience
+    background-size: cover
+  .form_phone
+      margin: 10px 0
+  .main__form
+    align-items: center
+    display: flex
+    flex-direction: column
+    width: 100%
+    margin: auto
+    button
+      display: block
+      margin: 0 auto
+      padding: 8px 32px
+  .computer
+    display: none
+  .tube
+    display: none
+  .cube
+    display: none
+  .footer-flower
+    display: none
+  .small-flower
+    display: none
+  .slide-flower
+    display: none
+  .fallen-slide-flower
+    display: none
+  .big-flower
+    display: none
+
+  .welcome
+    .map
+      height: 74%
+    h6
+      font-size: 22px
+      margin-bottom: 15px
+      span
+        font-size: 14px
+    form
+      .header__input
+        margin: 10px auto
+  .skin-form
+    flex-direction: column
+    align-items: center
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+
+  .cosmetic_item
+    border-left: none
+    border-right: none
+    &:nth-child(even)
+      padding-left: 50px
+      img
+        left: 0
+      span
+        left: 0         
+  .offers__item
+    margin-right: 0
+  .offers__item:nth-child(3n)
+    margin-right: 0
+  .cosmetic
+    h3
+      margin-bottom: 25px
+  .header_text
+    text-align: center
+    margin-left: 0
+  .header__input
+    -webkit-border-radius: 20px
+    border-radius: 20px
+    padding: 11px 33px
+  .gallery-slider
+    margin: 30px 0
+  .gallery__form
+    margin-top: 50px
+  .offers__item
+    width: 80%
+    &:last-child
+      margin-right: 0
+  .main__form
+    form
+      margin: 0 auto
+  .form_btn
+    padding: 8px 32px
+    width: auto
+    margin-left: 0px
+  .example
+    .header__input
+      margin-bottom: 0
+
+    .form_btn
+      margin-top: 0
+  h6
+    margin-top: 20px
+  #sync1 .owl-pagination
+    display: block
+    position: absolute
+    right: 0
+    left: 0
+    margin-top: 280px
+  #sync2
+    padding: 0
+    margin-bottom: 50px
+  .owl-theme .owl-controls .owl-buttons div
+    display: none
+  .owl-next
+    display: none
+  .main__form
+    width: 100%
+  .propositions__item:before
+    top: 12px
+  .price .propositions__item:before
+    top: 12px
+  h1
+    line-height: 2
+  h2
+    font-size: 30px
+  & span
+    font-size: 22px
+  input
+    display: block
+    bottom: -8%
+
+  .propositions__list
+    column-count: 1
+  .suggestions__item:first-child
+    margin-right: 0
+  .suggestion__list
+    padding: 20px
+  .suggestions__item
+    width: 80%
+
+  .suggestion__block
+    padding-left: 0
+  .offer__block
+    padding-left: 0
+    &:nth-child(3n)
+      margin-right: 0
+  .flower
+    display: none
+  .proposal__item
+    width: 80%
+    margin: 15px auto
+  .header
+     padding-bottom: 30px
+  .experience
+     background: none
+  .fallen-flower
+    z-index: -1
+  section
+    padding: 40px 0
+  .cosmetic_item
+    width: 100%
+
+
+  .welcome
+    .map
+      position: relative
+      width: 100vw
+      height: 350px
+      
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+  h2
+    text-align: center
+  .main-form__content
+    width: 100%
+  .gallery__form
+    padding: 20px  
+  .gallery-slider p
+    font-size: 14px
+    line-height: 1.2
+    text-align: center
+    padding: 15px
+  .welcome
+    .map
+      .address
+        font-size: 12px
+  h1
+    line-height: 1.5
+  .header h1 span
+    font-size: 22px
+  .header_guarantees-bold
+    font-size: 22px
+    padding: 10px 5px
+  .header__form_text
+    font-size: 16px
+  .header__form_content
+    span
+      font-size: 15px
+  h3
+    font-size: 24px
+    span
+      font-size: 22px
+  .lasers__content .heading-text
+    font-size: 21px
+    span
+      font-size: 19px
+  .doctors .team
+    font-size: 22px
+    span
+      font-size: 24px
+  #sync1 .item__right_top h3
+    font-size: 22px
+  .invention
+    font-size: 22px
+    line-height: 38px
+    span
+      font-size: 20px
+  .example
+    form
+      margin-top: 20px
+    .cost
+      font-size: 19px
+      line-height: 2
+      margin-top: 20px
+  .gallery--wrapper
+    height: 250px
+  #sync1
+    margin-bottom: 10px
+  #sync1 .owl-pagination
+    position: relative
+    margin-top: 0
+  #sync2
+    display: none!important
+  .header__call
+    .header__top-btn
+      padding: 0.6em 0
+      width: 150px
+  .offers__item
+    width: 100%
+  .suggestions__item
+    width: 100%
+  .proposal__item
+    width: 100%
+  .header_text
+    font-size: 14px
+  .footer__call
+    display: none
+  .header_guarantees
+    padding: 10px 4px
+    font-size: 18px
+  .lasers__advantages
+    display: block
+  .main__offers
+    ul
+      column-count: 1
+      margin-top: 20px
+
+  .swiper-slide
+    span
+      font-size: 12px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  
+  .hamburger
+    top: 14px
+  .header_text
+    font-size: 14px
+  .header_guarantees
+    font-size: 16px
+    h6
+      font-size: 19px
+      margin-bottom: 6px
+       
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
