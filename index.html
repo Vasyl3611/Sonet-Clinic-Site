@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Sonet Clinic</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="bootstrap/bootstrap-grid-flex.min.css">
+  <link rel="stylesheet" href="bootstrap/bootstrap-reboot.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/hamburgers.min.css"/>
+  <link href="dist/hamburgers.css" rel="stylesheet">
+  <link rel="stylesheet" href="libs/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <link rel="stylesheet" href="css/main.min.css">
+
+<style>
+      .preloader {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: #808080;
+        z-index: 1000;
+      }
+     .preloader__loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        margin-top: -25px;
+        margin-left: -25px;
+        border: 3px solid #0ab8b6;
+        border-top: 3px solid #ccc;
+        border-right: 3px solid #ccc;
+        border-left: 3px solid #ccc;
+        border-radius: 50em;
+        transition: all .25s ease;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+</head>
+<body>
+
+  <div class="preloader">
+    <div class="preloader__loader"></div>
+  </div>
+
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-block">
+        <div class="header__logo">
+          <a href = "#"><img src="img/logo.png" alt="Sonet Clinic" class="logo"></a>
+        </div>
+        <button class="hamburger hamburger--collapse" type="button">
+                  <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                  </span>
+        </button>
+        <nav class="header__nav" >
+          <ul class="nav-list" id="menu">
+            <li class="nav-list__item"><a href="#about">О нас</a></li>
+            <li class="nav-list__item"><a href="#actions">Акции</a></li>
+            <li class="nav-list__item"><a href="#offers">Услуги</a></li>
+            <li class="nav-list__item"><a href="#tools">Оборудование</a></li>
+            <li class="nav-list__item"><a href="#doctors">Врачи</a></li>
+            <li class="nav-list__item"><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__call">
+          <a href="#" class="button header__top-btn callback_open">Онлайн запись</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__center-block">
+    <div class="container">
+        <div>
+          <p class="header_text">ЦЕНТР ДЕРМАТОЛОГИИ И ЛАЗЕРНОЙ, ЭСТЕТИЧЕСКОЙ КОСМЕТОЛОГИИ</p>
+
+
+          <h1><span><strong>ГАРАНТИРУЕМ 100% БЕЗОПАСНОСТЬ</strong><br> И БЕЗБОЛЕЗНЕННОСТЬ ЛАЗЕРНЫХ ПРОЦЕДУР<br> В НАШЕМ ЦЕНТРЕ</span></h1>
+
+        </div>
+        <div class="header__form">
+            <p><span class="header__form_text">ДАРИМ ДО 15% НА ЛАЗЕРНУЮ ЭПИЛЯЦИЮ, ЕСЛИ ПРИДЕТЕ С ПОДРУГАМИ!</span> <br>
+              <span>Оставьте заявку сейчас и мы запишем вас на ближайшее свободное время</span>
+            </p>
+            <div class="main__form">
+
+              <form action="sendmail.php" method="post" class="form offer-form">
+                <input type="hidden" name="subject" value="15% НА ЛАЗЕРНУЮ ЭПИЛЯЦИЮ">
+                <div>
+                  <input type="text" class="header__input" name="name" required placeholder="Введите Ваше имя">
+                </div>
+                <div>
+                  <input type="tel" name="phone" class="header__input form_phone" required placeholder="Введите Ваш телефон">
+                </div>
+                <button type="submit" class="button form_btn">Запись на ДЕВИЧНИК</button>
+              </form>
+
+            </div>
+        </div>
+      </div>
+  </div>
+  <div class="propositions">
+    <div class="container">
+      <div class="services">
+        <ul class="propositions__list">
+          <li class="propositions__item">Эпиляция</li>
+          <li class="propositions__item">Фраксель</li>
+          <li class="propositions__item">Лазерное омоложение</li>
+          <li class="propositions__item">И многое другое всего от 200 грн</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="experience" id="about">
+  <div class="container">
+    <h2 class="heading">Мы собрали лучший мировой опыт<span>
+               <br> в дерматологии и эстетической медицине <br>
+               и применили его в Sonet Clinic</span>
+    </h2>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-12 col-lg-6  experince__block">
+        <p>Мы рады видеть вас на сайте семейного центра дерматологии и эстетической медицины Sonet Clinic!</p>
+        <p>Каждый человек индивидуален и красота его неповторима. Наша кожа - это зеркальное отражение работы внутренних органов.
+          Поэтому мы работаем не только над внешними проблемами, а прежде всего ищем причину изнутри.
+        </p>
+        <p>Мы не нарушаем вашу красоту, а только ее подчеркиваем. Мы рады поделиться с вами нашим опытом и знаниями, завоевав ваше признание.</p>
+        <blockquote>С уважением и заботой о вас,<br>
+          Главный врач Sonet Clinic,<br>
+          Жанна Овсепян
+        </blockquote>
+      </div>
+      <div class="col-md-9 col-lg-6">
+        <img src="img/UI1.jpg" alt="doctor">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="offers" id="actions">
+  <div class="container">
+    <h3><span>Акции в</span> Sonet Clinic</h3>
+    <div class=" offer__block">
+      <div class="offers__item">
+        <img src="img/epilation6.jpg" alt="epilation">
+        <div class="offers__item-text">
+          <h4>Масаж</h4>
+          <p class="offers__text">Приходите на лимфодренаж или массаж и <strong>ПОЛУЧИТЕ 30% СКИДКУ</strong>
+            на консультацию врача-диетолога!
+          </p>
+        </div>
+        <div class="offers__btn">
+          <button class="header__top-btn-white callback_open">Получить скидку</button>
+        </div>
+      </div>
+      <div class="offers__item">
+        <img src="img/epilation4.jpg" alt = "epilation">
+        <div class="offers__item-text">
+          <h4>Консультация</h4>
+          <p class="offers__text">Каждому клиенту – консультация врача-диетолога  <strong>СО СКИДКОЙ 15%</strong>
+            на консультацию врача-диетолога!
+          </p>
+        </div>
+        <div class="offers__btn">
+          <button class="header__top-btn-white callback_open">Получить скидку</button>
+        </div>
+      </div>
+      <div class="offers__item">
+        <img src="img/epilation3.jpg" alt = "epilation">
+        <div class="offers__item-text">
+          <h4>Карбоновый пилинг</h4>
+          <p class="offers__text">Дарим <strong>БЕСПЛАТНЫЙ</strong> гоммаж после каждого пилинга всем, кто пройдет 3 процедуры карбонового пилинга</p>
+        </div>
+        <div class="offers__btn">
+          <button class="header__top-btn-white callback_open">Получить скидку</button>
+        </div>
+      </div>
+      <div class="offers__item">
+        <img src="img/epilation2.jpg" alt = "epilation">
+        <div class="offers__item-text">
+          <h4>Дерматоскопия</h4>
+          <p class="offers__text">Сделаем БЕСПЛАТНУЮ дерматоскопию при удалении любого новообразования</p>
+        </div>
+        <div class="offers__btn">
+          <button class="header__top-btn-white callback_open">Получить скидку</button>
+        </div>
+      </div>
+      <div class="offers__item">
+        <img src="img/epilation7.jpg" alt="epilation">
+        <div class="offers__item-text">
+          <h4>Девичник</h4>
+          <p class="offers__text">Если ваш общий чек составляет 4000гр за сеанс, каждая получает скидку 5%!</p>
+          <ul class="price">
+            <li class="propositions__item">5000гр - 10%</li>
+            <li class="propositions__item">6000гр - 15%</li>
+          </ul>
+        </div>
+        <div class="offers__btn">
+          <button class="header__top-btn-white callback_open">Получить скидку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flower">
+    <img src="img/small-flower.png" alt="orchidea">
+  </div>
+  <div class="orchidea">
+    <img src="img/flower.png" alt="orchidea">
+  </div>
+  <div class="fallen-flower">
+    <img src="img/fallen-flower.png" alt="orchidea">
+  </div>
+</section>
+
+<section class="suggestions" id="offers">
+  <div class="container">
+    <h3>Подчеркнем красоту и здоровье вашей кожи<br>
+      <span>всего за несколько процедур</span>
+    </h3>
+    <div class="suggestion__block">
+      <div class="suggestions__item" id="neod">
+        <h5>Неодимовый лазер</h5>
+        <ul class="suggestion__list">
+          <li class="suggestion__list_item"><a href="#" class="woman-cosmetology_open">Лазерная эпиляция темных<br> волос</a></li>
+          <li class="suggestion__list_item"><a href="#" class="woman-cosmetology_open">Лазерное удаление сосудов</a></li>
+          <li class="suggestion__list_item"><a href="#" class="woman-cosmetology_open">Лазерное глубокое<br> дермальное омоложение</a></li>
+          <li class="suggestion__list_item"><a href="#" class="woman-cosmetology_open">Карбоновый пилинг</a></li>
+          <li class="suggestion__list_item"><a href="#" class="woman-cosmetology_open">Лазерное лечение<br> онихомикоза</a></li>
+        </ul>
+        <div class="offers__btn">
+          <button class="header__top-btn-white woman-cosmetology_open">Записаться</button>
+        </div>
+      </div>
+      <div class="suggestions__item" id="aleks">
+        <h5>Александритовый лазер</h5>
+        <ul class="suggestion__list">
+          <li class="suggestion__list_item"><a href="#" class="woman-cosmetologies_open">Лазерная эпиляция<br> светлых волос</a></li>
+          <li class="suggestion__list_item"><a href="#" class="woman-cosmetologies_open">Лазерное удаление<br> пигментации</a></li>
+        </ul>
+        <div class="offers__btn">
+          <button class="header__top-btn-white woman-cosmetologies_open">Записаться</button>
+        </div>
+      </div>
+      <div class="suggestions__item" id="co2">
+        <h5>Со2 лазер, Фраксель</h5>
+        <ul class="suggestion__list">
+          <li class="suggestion__list_item"><a href="#" class="woman-cosmetologic_open">Удаление новобразований<br> на коже</a></li>
+          <li class="suggestion__list_item"><a href="#" class="woman-cosmetologic_open">Фракционное лазерное<br> омоложение</a></li>
+          <li class="suggestion__list_item"><a href="#" class="woman-cosmetologic_open">Лазерная шлифовка рубцов<br> и постакне</a></li>
+          <li class="suggestion__list_item"><a href="#" class="woman-cosmetologic_open">Лазерная эстетическая<br> гинекология</a></li>
+        </ul>
+        <div class="offers__btn">
+          <button class="header__top-btn-white woman-cosmetologic_open">Записаться</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tube">
+    <img src="img/exposition2.png" alt="exposition">
+  </div>
+</section>
+
+<section class="proposal">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="proposal__item" id="consultation">
+          <h5>Консультации врачей</h5>
+          <ul class="suggestion__list">
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology5_open">Гинеколог-эндокринолог (лечение патологии шейки матки, кольпоскопия)</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology5_open">Дерматовенеролог</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology5_open">Трихолог</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology5_open">Косметолог</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology5_open">Терапевт</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology5_open">Диетолог</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology5_open">Массажист</li></a>
+          </ul>
+          <div class="offers__btn">
+            <button class="header__top-btn-white woman-cosmetology5_open">Записаться</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="proposal__item" id="man-cosmetology">
+          <h5>Мужская косметология</h5>
+          <ul class="suggestion__list">
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology6_open">Чистка лица</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology6_open">Карбокситерапия</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology6_open">Лечебный массаж</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology6_open">Лазерное удаление сосудов</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology6_open">Лазерная эпиляция для мужчин</li></a>
+          </ul>
+          <div class="offers__btn">
+            <button class="header__top-btn-white woman-cosmetology6_open">Записаться</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="proposal__item" id="woman-cosmetology7">
+          <h5>Женская косметология</h5>
+          <ul class="suggestion__list">
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology8_open">Чистка лица</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology8_open">Карбокситерапия</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology8_open">Аппаратная косметология</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology8_open">Инъекционная косметология</li></a>
+          </ul>
+          <div class="offers__btn">
+            <button class="header__top-btn-white woman-cosmetology8_open">Записаться</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="proposal__item" id="treat">
+          <h5>Лечебный массаж</h5>
+          <ul class="suggestion__list">
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology9_open">Массаж тела</li></a>
+            <li class="suggestion__list_item"><a href="#" class="woman-cosmetology9_open">Массаж лица</li></a>
+          </ul>
+          <div class="offers__btn">
+            <button class="header__top-btn-white woman-cosmetology9_open">Записаться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pigmentation">
+  <div class="container">
+    <h2 class="heading">Посмотрите, <span>как врачи центра<br>
+      проводят лазерные процедуры</span>
+    </h2>
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <!-- <p>Удаление пигментации методом Fraxel</p> -->
+        <div class="gallery--wrapper">
+          <div class="swiper-container gallery__left">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(img/gallery-left-1.jpg)">
+                <span>Блефаропластика верхнего века методом Fraxel</span>
+              </div>
+              <div class="swiper-slide" style="background-image:url(img/gallery-left-2.jpg)">
+                <span>Лазерная шлифовка постакне (Fraxel)</span>
+              </div>
+              <div class="swiper-slide" style="background-image:url(img/gallery-left-3.jpg)">
+                <span>Удаление пигментации методом Fraxel</span>
+              </div>
+              <div class="swiper-slide" style="background-image:url(img/gallery-left-4.jpg)">
+                <span>Удаление капиллярной сетки</span>
+              </div>
+              <div class="swiper-slide" style="background-image:url(img/gallery-left-5.jpg)">
+                <span>Коррекция носогубной складки</span>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+          </div>
+          <div class="swiper-container gallery-thumbs__left">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(img/gallery-left-1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(img/gallery-left-2.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(img/gallery-left-3.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(img/gallery-left-4.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(img/gallery-left-5.jpg)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <!-- <p>Лазерное дермальное глубокое омоложение</p> -->
+        <div class="gallery--wrapper">
+          <div class="swiper-container gallery__right">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <span>Работа препаратом Radiesse</span>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DDOkB2RqDkE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide">
+                <span>Лазерное дермальное глубокое омоложение</span>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SuCSXCOjymk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <!-- <div class="swiper-slide">
+                <span>Лазерное дермальное глубокое омоложение</span>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kIHFbemfusk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide">
+                <span>Лазерное дермальное глубокое омоложение</span>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kIHFbemfusk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide">
+                <span>Лазерное дермальное глубокое омоложение</span>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kIHFbemfusk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div> -->
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+          </div>
+          <div class="swiper-container gallery-thumbs__right">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(img/gallery-right-min-1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(img/gallery-right-min-2.jpg)"></div>
+              <!-- <div class="swiper-slide" style="background-image:url(img/operation2.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(img/operation2.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(img/operation2.jpg)"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class = "cosmetic">
+  <div class="container">
+    <h3>Врачи подберут и при вас изготовят <br>
+      <span>индивидуальную косметику для лица <strong>всего за 2 минуты</strong></span>
+    </h3>
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-MSAF05kugg"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class = "cosmetic__block">
+          <div class="cosmetic_item">
+            <img src="img/make-up.svg" alt="make-up">
+            <span>#01</span>
+            <h6>Анализ проблемных зон</h6>
+            <p>Врач анализирует состояние вашей кожи, проблемные зоны, учитывает ваши пожелания</p>
+          </div>
+          <div class="cosmetic_item">
+            <img src="img/make-up-2.svg" alt="make-up">
+            <span>#02</span>
+            <h6>Анализы кожы</h6>
+            <p>Собирает все необходимые анализы</p>
+          </div>
+          <div class="cosmetic_item">
+            <img src="img/cream.svg" alt="make-up">
+            <span>#03</span>
+            <h6>Подбор рецепту</h6>
+            <p>Подбирает из всех возможных рецептур ту, которая подходит именно вам</p>
+          </div>
+          <div class="cosmetic_item">
+            <img src="img/preparing.svg" alt="make-up">
+            <span>#04</span>
+            <h6>Подготовка</h6>
+            <p>Помещает и взбивает все ингредиенты в центрифуге</p>
+          </div>
+          <div class="cosmetic_item">
+            <img src="img/result.svg" alt = "result">
+            <span>#05</span>
+            <h6>Результат</h6>
+            <p>За 2 минуты вы получаете персональную сыворотку для лица</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class = "cube">
+    <img src = "img/Cube.png" alt="card">
+  </div>
+</section>
+
+<section class = "skin">
+  <div class="container">
+  <h3>Хотите создать косметику,<br>
+    <span>которая учитывает особенности конкретно вашей кожи?</span>
+  </h3>
+  <p class = "skin__text">запишитесь прямо сейчас и получите персональную линейку средств
+    <br>для лица, созданную с любовью нашими врачами
+  </p>
+  <div class="main__form">
+    <div class="container">
+
+              <form action="sendmail.php" method="post" class="form skin-form">
+                <input type="hidden" name="subject" value="">
+                <div class="form-group">
+                  <input type="text" class="header__input" name="name" required placeholder="Введите Ваше имя">
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="phone" class="header__input form_phone" required placeholder="Введите Ваш телефон">
+                </div>
+                <button type="submit" class="button form_btn">создать косметику</button>
+              </form>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class = "lasers" id="tools">
+  <h3>Бесконтактные лазеры solar laser systems<br>
+    <span>позволяют проводить 100% <strong>безопасные процедуры,</strong>
+            <br>не прикасаясь к вашему телу</span>
+  </h3>
+  <div class="container">
+    <div class="lasers__advantages">
+      <div class="advantages__item">
+        <img src = "img/bacteria.svg" alt="bacteria">
+        <h6>Никаких рисков<br>
+          <span>заражения инфекциями</span>
+        </h6>
+      </div>
+      <div class="advantages__item">
+        <img src = "img/injection.svg" alt="injection">
+        <h6>Абсолютно<br>
+          <span>безболезненно</span>
+        </h6>
+      </div>
+      <div class="advantages__item">
+        <img src = "img/clock.svg" alt="clock">
+        <h6>Процедура занимает<br>
+          <span>всего несколько минут</span>
+        </h6>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="lasers__operation">
+          <img src = "img/operation2.jpg" alt="operation">
+          <div class="lasers__content">
+            <a href = "#">Evomatrix</a>
+            <p class = "heading-text">
+              Лазерный луч, который захватывает
+              и вырезает необходимую область<br><span>Лазер с несколькими насадками:</span>
+            </p>
+            <ul class="price">
+              <li class="propositions__item">Удаляет новообразования</li>
+              <li class="propositions__item">Проводит лазерную шлифовку (фраксель), шлифует рубцы и шрамы</li>
+              <li class="propositions__item">Проводит процедуры в области эстетической гинекологии</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="lasers__operation">
+          <img src = "img/operation.jpg" alt="operation">
+          <div class="lasers__content">
+            <a href = "#">Evoline</a>
+            <p class="heading-text">Александритовый лазер<br><span>удаляет тонкие, светлые, пушковые волосы,
+                           пигментацию</span>
+            </p>
+            <p class="heading-text">Неодимовый лазер справляется с<br><span>Темным волосом, бородавками, сосудистой
+                           капиллярной сеточкой и многим другим!</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class = "computer">
+    <img src = "img/evomatrix3.jpg" alt="evomatrix">
+  </div>
+</section>
+
+<section class="doctors" id="doctors">
+  <div class="container">
+    <p class="team"><span>Наша команда – это профессиональные врачи</span> <br>с высшим образованием, готовые делиться своими знаниями и опытом</p>
+    <div class="doctors--wrapper">
+      <div id="sync1" class="owl-carousel">
+        <div class="item">
+          <div class="item__left">
+            <img src="img/doctor-1.jpg" alt="doctor">
+          </div>
+          <div class="item__right">
+            <div class="item__right_top">
+              <p>Врач дерматовенеролог высшей категории</p>
+              <p>Опыт работы: 21 год</p>
+              <h3>Жанна Овсепян, <br>Главный врач Sonet Clinic</h3>
+            </div>
+            <div class="item__right_content">
+              <p><strong>1990-1996</strong> обучение в Одесском медицинском университете им. Н. И. Пирогова на факультете «Лечебное дело»</p>
+              <p><strong>1996-1997</strong> интернатура на кафедре дерматовенерологии ОГМУ им. Н.И.Пирогова</p>
+              <p>С <strong>2016 года</strong> обучение в институте управления при президенте Украины , факультет государственного управления, отделение здравоохранения.</p>
+              <p>С <strong>1997-2016</strong> г.врач дерматовенеролог городского кожеовенерологического отделения, отделение Малинового района.</p>
+              <p>С <strong>2009 -2016</strong> г.врач дерматокосметолог (по совместительству) студии лазерной косметологии «Аристо»</p>
+              <p><strong>2016 -2017</strong> г. Врач эксперт-дерматовенеролог военно-медицинской комиссии ГУМВД Украины в Одесской области.</p>
+              <p>С <strong>октября 2017</strong> г. директор и главный врач медицинского центра «Sonet Clinic»</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__left">
+            <img src="img/doctor-2.jpg" alt="doctor">
+          </div>
+          <div class="item__right">
+            <div class="item__right_top">
+              <p>Врач гинеколог высшей категории</p>
+              <p>Опыт работы: 20 лет</p>
+              <h3>Янченко Виталия</h3>
+            </div>
+            <div class="item__right_content">
+              <p>Окончила Одесский государственный медицинский университет в 1997 году.</p>
+              <p>Врач акушер-гинеколог, детский гинеколог высшей категории.</p>
+              <p>Проводит кальпоскопическую диагностику шейки матки.</p>
+              <p>Владеет методами лечения патологии шейки матки:</p>
+                <ul>
+                  <li>крио-деструкции;</li>
+                  <li>лазерное и радиоволновое;</li>
+                </ul>
+              <p>Проводит лечение патологии влагалища и шейки матки методом плазмолифтинга.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__left">
+            <img src="img/doctor-3.jpg" alt="doctor">
+          </div>
+          <div class="item__right">
+            <div class="item__right_top">
+              <p>Врач диетолог, эко-диетолог, спортивный диетолог</p>
+              <p>Опыт работы: 12 лет</p>
+              <h3>Янгичер Ольга</h3>
+            </div>
+            <div class="item__right_content">
+              <p>В <strong>2000</strong> окончила ОГМУ по специальности Лечебное дело.</p>
+              <p>С <strong>2000</strong> по 2001 год - интернатура по фтизиатрии.</p>
+              <p>В <strong>2003</strong> году - специализация по рентгенологии.</p>
+              <p><strong>2007 г.</strong> - специализация по спортивной медицине.</p>
+              <p><strong>2010 г.</strong> - специализация по терапии.</p>
+              <p>На <strong>данный момент</strong> работаю врачом функциональной диагностики в Одесском областном физкультурном диспансере, Врачом-диетологом в доставке здорового питания Cross Food и консультирую клиентов спа-туров в спа центре Немо.</p>
+              <p>Член ассоциации диетологов Украины, эко-диетолог, спортивный диетолог.</p>
+              <p>Ведущий преподаватель и методист курсов диетологии (семейной, детской, спортивной), автор совместных семинаров с психологами по нарушению пищевого поведения. Разработка индивидуальных программ по коррекции веса. Индивидуальная работа с проблемой дефицита массы тела. Детская диетология.</p>
+              <p><em>На сегодняшний день, многие на собственном опыте доказали неэффективность ограничительных диет. Но проблема лишнего веса, а главное, его последствий для здоровья, не перестаёт быть актуальной! Моя задача, научить человека предоставлять своему организму все необходимые условия для качественной и бесперебойной работы. Да, для этого нужно время и не только навыки выбирать здоровые продукты. Вас должен вдохновлять конечный результат вашей работы! А это, отличное самочувствие, радующее отражение в зеркале, не зависимо от выбранного наряда, а, главное, больше не возвращаться к проблемам веса и здоровья!</em></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__left">
+            <img src="img/doctor-4.jpg" alt="doctor">
+          </div>
+          <div class="item__right">
+            <div class="item__right_top">
+              <p>Врач дерматовенеролог</p>
+              <p>Опыт работы: 13 лет</p>
+              <h3>Саакова Наталья</h3>
+            </div>
+            <div class="item__right_content">
+              <p><strong>1997-2003</strong> г. Одесский государственный  медицинский университет им. Пирогова. Лечебный факультет.    </p>
+              <p><strong>2003-2004</strong> г. интернатура на кафедре «кожных и венерических болезней» ОГМУ, специализация  «Дерматовенерология».  </p>
+              <p>Член ассоциации дерматовенерологов Украины с 2003 г.</p>
+              <p>В <strong>2015</strong> г. присвоена высшая категория.</p>
+              <p>С <strong>2005 г. по 2015 г.</strong> врач дерматовенеролог в Одесском городском кожно-венерологическом диспансере КВО 1. </p>
+              <p>С <strong>2012 и по настоящее время</strong> работаю врачем дерматологом в КУ «Поликлиника 6».</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__left">
+            <img src="img/doctor-5.jpg" alt="doctor">
+          </div>
+          <div class="item__right">
+            <div class="item__right_top">
+              <p>Врач дерматовенеролог</p>
+              <h3>Михайлюк Ксения</h3>
+            </div>
+            <div class="item__right_content">
+              <p><strong>2009-2015</strong> ВГУУ « УМСА» г. Полтава2015-2017гг. интернатура по «Дерматовенерологии» «ОНМедУ» г. Одесса</p>
+              <p><strong>2015-2017</strong>гг. интернатура по «Дерматовенерологии» «ОНМедУ» г. Одесса</p>
+              <p>На <strong>данный момент</strong> получаю высшую квалификацию по своей специальности, на «кафедре дерматологии и венерологии» на должности клинический ординатор.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__left">
+            <img src="img/doctor-6.jpg" alt="">
+          </div>
+          <div class="item__right">
+            <div class="item__right_top">
+              <p>Врач косметолог-эстетист</p>
+              <p>Опыт работы: 24 год</p>
+              <h3>Кобилянская Анна</h3>
+            </div>
+            <div class="item__right_content">
+              <p>В 1992 году закончила медучилище, сестринский факультет.</p>
+              <p>В 1992 году принята на работу  на должность медсестра поликлиники.</p>
+              <p>С 1994 года принята на работу мастером косметологии в косметический кабинет.</p>
+              <p>В 1994 году закончила курсы лечебной косметологии.</p>
+              <p>Сфера работы:</p>
+              <ul>
+                <li>массажные техники</li>
+                <li>мезотерапия</li>
+                <li>аппаратная косметология</li>
+                <li>лазерная косметология</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__left">
+            <img src="img/doctor-7.jpg" alt="">
+          </div>
+          <div class="item__right">
+            <div class="item__right_top">
+              <p>Врач дерматовенеролог</p>
+              <h3>Кирилюк Алиса</h3>
+            </div>
+            <div class="item__right_content">
+              <p><strong>2015-2017</strong> Национальная медицинская академия последипломного образования им. Шупика. Специальность: врач-дерматовенеролог.</p>
+              <p><strong>2012 - Курс</strong> по специализированной классической и аппаратной косметологии в УЦ "Космо-Трейд".</p>
+              <p><strong>2009 - 2015</strong> Национальный медицинский университет им. А.А.Богомольца, г. Киев, Украина.</p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__left">
+            <img src="img/doctor-8.jpg" alt="">
+          </div>
+          <div class="item__right">
+            <div class="item__right_top">
+              <p>Врач-терапевт</p>
+              <p>Опыт работы: 21 год</p>
+              <h3>Исмаилова Муслимат</h3>
+            </div>
+            <div class="item__right_content">
+              <p><strong>1990 – 1996</strong> Одесский государственный медицинский университет имени Пирогова, лечебный факультет.</p>
+              <p><strong>1996 – 1998</strong> Интернатура на базе Род.Дом номер 2, город Одесса. Специализация «Акушерство и гинекология».</p>
+              <p><strong>2004 – 2013</strong> СОМК «Магнолия», врач-ординатор.</p>
+              <p><strong>2013 – н.в.</strong> Врач-терапевт в клиническом санатории им. Горького.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__left">
+            <img src="img/doctor-9.jpg" alt="">
+          </div>
+          <div class="item__right">
+            <div class="item__right_top">
+              <p>Специалист по лечебно-профилактическому массажу</p>
+              <h3>Горшков Михаил</h3>
+            </div>
+            <div class="item__right_content">
+              <p><strong>Июнь 2015 г.</strong> — Окончил «Институт Профессиональных Технологий» по специальности массажист.</p>
+              <p><strong>Июль 2015 г. - Декабрь 2015 г.</strong> — «Центр Реабилитации Воинов Афганцев». Помощник ведущего специалиста. Получение практических навыков массажа.</p>
+              <p><strong>Август 2015 г. и по сей день</strong> — СПА салон «Натурель». Специалист массажа и спа-процедур.</p>
+              <p><strong>Июнь 2016 г. и по сей день</strong> — Санаторий им. Горького. Массажист широкого профиля. Лечебный и другие виды массажа.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__left">
+            <img src="img/doctor-10.jpg" alt="">
+          </div>
+          <div class="item__right">
+            <div class="item__right_top">
+              <p>Врач дерматовенеролог</p>
+              <p>Опыт работы: 25 лет</p>
+              <h3>Бурносенкова Инна</h3>
+            </div>
+            <div class="item__right_content">
+              <p>Окончила Кишинёвский медицинский институт им. Тестимициану в <strong>1990</strong> году; после прохождения интернатуры работала врачом дерматовенерологом, заведующей диспансерного отделения, заместителем главного врача по лечебной работе кожно-венерологического диспансера г. Тирасполя (Молдова).</p>
+              <p>С <strong>2012</strong> года врач дерматовенеролог городского кожно-венерологического диспансера г.Одессы.</p>
+              <p>С <strong>2015 по 2016</strong> год заместитель главного врача по лечебной работе ГКВД г. Одессы.</p>
+              <p>С <strong>2017</strong> года по настоящее время врач дерматовенеролог консультативно-поликлинического отделения городской больницы №5 г. Одессы.</p>
+              <p>Участник международных и всеукраинских конгрессов и конференций по вопросам дерматологии косметологии.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__left">
+            <img src="img/doctor-11.jpg" alt="">
+          </div>
+          <div class="item__right">
+            <div class="item__right_top">
+              <p> Врач гинеколог высшей категории</p>
+              <p>Опыт работы: 21 год</p>
+              <h3>Аль Саид Светлана</h3>
+            </div>
+            <div class="item__right_content">
+              <p>С <strong>1990 – 1996г.</strong> Одесский государственный медицинский университет им. Пирогова. Лечебный факультет.</p>
+              <p>С <strong>1997 – 2000 год</strong> клиническая ординатура на кафедре акушерства и гинекологии ОГМУ.</p>
+              <p>Опыт работы:</p>
+              <p>С <strong>2000г. По 2005 г.</strong> Работала врачом гинекологом в Алеппо (Сирия).</p>
+              <p>В <strong>2010 г. , 2015</strong> проходила курсы по кольпоскопии.</p>
+              <p>С <strong>2005 г. По 2018 г.</strong>  Врач гинеколог – эндокринолог в ОГСП №21.</p>
+              <p>Специализация: патология шейки матки.</p><strong></strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sync2" class="owl-carousel">
+        <div class="item">
+          <img src="img/doctor-1.jpg" alt="doctor">
+          <h3>Овсепян Жанна <br>Арутюновна</h3>
+          <p>Врач дерматовенеролог высшей категории</p>
+          <p>Опыт работы 21 год</p>
+        </div>
+        <div class="item">
+          <img src="img/doctor-2.jpg" alt="doctor">
+          <h3>Янченко Виталия <br>Владимировна</h3>
+          <p>Врач гинеколог высшей категории</p>
+          <p>Опыт работы 20 лет</p>
+        </div>
+        <div class="item">
+          <img src="img/doctor-3.jpg" alt="doctor">
+          <h3>Янгичер Ольга <br>Павловна</h3>
+          <p>Врач диетолог, эко-диетолог, спортивный диетолог</p>
+          <p>Опыт работы 12 лет</p>
+        </div>
+        <div class="item">
+          <img src="img/doctor-4.jpg" alt="doctor">
+          <h3>Саакова Наталья Арсэновна<br></h3>
+          <p>Врач дерматовенеролог</p>
+          <p>Опыт работы 13 лет</p>
+        </div>
+        <div class="item">
+          <img src="img/doctor-5.jpg" alt="doctor">
+          <h3>Михайлюк Ксения <br>Аликовна</h3>
+          <p>Врач дерматовенеролог</p>
+          <p></p>
+        </div>
+        <div class="item">
+          <img src="img/doctor-6.jpg" alt="doctor">
+          <h3>Кобилянская Анна <br>Васильевна</h3>
+          <p>Врач косметолог-эстетист</p>
+          <p>Опыт работы 24 год</p>
+        </div>
+        <div class="item">
+          <img src="img/doctor-7.jpg" alt="doctor">
+          <h3>Кирилюк Алиса <br>Игорвена</h3>
+          <p>Врач дерматовенеролог</p>
+          <p> </p>
+        </div>
+        <div class="item">
+          <img src="img/doctor-8.jpg" alt="doctor">
+          <h3>Исмаилова Муслимат <br>Ахмедовна</h3>
+          <p>Врач-терапевт</p>
+          <p>Опыт работы 21 год</p>
+        </div>
+        <div class="item">
+          <img src="img/doctor-9.jpg" alt="doctor">
+          <h3>Горшков Михаил <br>Сергеевич</h3>
+          <p>Специалист по лечебно-профилактическому массажу</p>
+          <p> </p>
+        </div>
+        <div class="item">
+          <img src="img/doctor-10.jpg" alt="doctor">
+          <h3>Бурносенкова Инна <br>Андреевна</h3>
+          <p>Врач дерматовенеролог</p>
+          <p>Опыт работы 25 лет</p>
+        </div>
+        <div class="item">
+          <img src="img/doctor-11.jpg" alt="doctor">
+          <h3>Аль Саид Светлана <br>Анатольевна</h3>
+          <p>Врач гинеколог высшей категории</p>
+          <p>Опыт работы 21 год</p>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="button header__top-btn callback_open">записаться к врачу</a>
+  </div>
+  <div class = "slide-flower">
+    <img src="img/small-flower.png" alt="flower">
+  </div>
+  <div class = "fallen-slide-flower" alt="flower">
+    <img src="img/fall.png" alt="flower">
+  </div>
+  <div class = "big-flower">
+    <img src="img/big-flower.png" alt="flower">
+  </div>
+</section>
+
+<section class = "example">
+  <div class="container">
+    <h3 class = "invention"><mark>Производим забор материала на клинические исследования</mark><br>
+      <span><mark>на базе лаборатории КУ городской поликлиники №6</mark></span>
+    </h3>
+    <p class = "cost"><mark>Получите на почту актуальную стоимость всех процедур в лаборатории</mark></p>
+
+      <form action="sendmail.php" method="post" class="form example-form">
+        <input type="hidden" name="subject" value="15% НА ЛАЗЕРНУЮ ЭПИЛЯЦИЮ">
+        <input type="text" class="header__input" name="email" required placeholder="Введите Ваш E-mail">
+        <button type="submit" class="button form_btn">узнать стоимость</button>
+      </form>
+  </div>
+</section>
+
+<section class = "welcome" id="contacts">
+  <h3>Рады будем видеть вас<br>
+    <span>в нашей уютной клинике на берегу моря</span>
+  </h3>
+
+  <div class = "map">
+          <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBmnk4RCDwjSucIJ2WXRnLkuCrsWR4DUM4&v=3.exp'></script>
+          <div style='overflow:hidden;height:100%;'>
+            <div id='gmap_canvas' style='height:100%;width:100%;'></div>
+            <div><small><a href="embedgooglemaps.com/ru">https://embedgooglemaps.com/ru/</a></small></div>
+            <div><small>
+              <a href="http://mrpromokod.ru/svyaznoy/">http://mrpromokod.ru/svyaznoy/</a></small>
+            </div>
+            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+          </div>
+          <script>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(46.42617425014149,30.758729134802252), mapTypeId: google.maps.MapTypeId.ROADMAP};
+              map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(46.42617425014149,30.758729134802252)});
+              infowindow = new google.maps.InfoWindow({content:'<strong><span class = "address">Адрес: </span></strong>г.Одесса, Аркадиевский переулок, 4 - 503 <br>' + '<span class = "address">Телефон: </span> +38 098-799-4-799, +38 093-799-4-799\n' + '<br> +38 048-799-85-07<br>'});
+              google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+              infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+          </script>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+      </div>
+      <div class="col-md-6 photo-gallery">
+        <h6>Фотогалерея:</h6>
+        <div class="gallery-slider">
+          <div class="item">
+            <img src="img/slider/footer/slide.jpg" alt="slide">
+            <p>Современный дизайн клиники и радушие нашего коллектива создаёт неповторимую атмосферу, где вы можете также под чашечку ароматного кофе насладиться картинами одесской художницы Марины Юкиш
+            </p>
+          </div>
+          <div class="item">
+            <img src="img/slider/footer/interier-2.jpg" alt="tools">
+            <p>Заблаговременная запись  позволит вам получить консультацию или процедуру в удобное для вас время
+            </p>
+          </div>
+          <div class="item">
+            <img src="img/slider/footer/interier-4.jpg" alt="tools">
+            <p>Современное климатическое оборудование обеспечит комфортное пребывание в клинике во время процедур
+            </p>
+          </div>
+          <div class="item">
+            <img src="img/slider/footer/interier-3.jpg" alt="tools">
+            <p>Наши программы лояльности порадуют вас хорошими скидками
+            </p>
+          </div>
+          <div class="item">
+            <img src="img/slider/footer/slide-2.jpg" alt="tools">
+            <p>Вы по достоинству сможете оценить профессионализм наших врачей
+            </p>
+          </div>
+        </div>
+        <div class = "gallery__form">
+          <h6>Мы проконсультируем вас<br>
+            <span>прямо сейчас и запишем к нужному врачу<br>
+                        в течение 5 минут</span>
+          </h6>
+          <div class="main__form">
+            <form action="sendmail.php" method="post" class="form welcome-form">
+                <input type="hidden" name="subject" value="15% НА ЛАЗЕРНУЮ ЭПИЛЯЦИЮ">
+                  <input type="text" class="header__input" name="name" required placeholder="Введите Ваше имя">
+                  <input type="tel" name="phone" class="header__input form_phone" required placeholder="Введите Ваш телефон">
+                <button type="submit" class="button form_btn">Записаться</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="small-flower">
+    <img src = "img/small-flower.png" alt="flower">
+  </div>
+
+  <div class="footer-flower">
+    <img src = "img/fall.png" alt="flower">
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__block">
+  <div class="container">
+    <div class = "footer__top-block">
+    <div class="footer__logo">
+      <a href = "#"><img src="img/logo.png" alt="Sonet Clinic"></a>
+    </div>
+      <ul class="nav-list">
+        <li class="nav-list__item"><a href="#">О нас</a></li>
+        <li class="nav-list__item"><a href="#">Акции</a></li>
+        <li class="nav-list__item"><a href="#">Услуги</a></li>
+        <li class="nav-list__item"><a href="#">Оборудование</a></li>
+        <li class="nav-list__item"><a href="#">Врачи</a></li>
+        <li class="nav-list__item"><a href="#">Контакты</a></li>
+      </ul>
+ 
+    <div class="footer__call">
+      <a href="#" class="button header__top-btn callback_open">Онлайн запись</a>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class = "footer__bottom">
+    <p class = "copyright">Copyright  &copy;  2018 Sonet Clinic</p>
+    <p class = "copyright">Политика конфиденциальности</p>
+  </div>
+</footer>
+
+  <!-- Modal -->
+<div id="callback" class="modal">
+    <button class="callback_close modal__close">
+      Close
+      <span class="modal__close-line"></span>
+    </button>
+    <h3>Онлайн запись</h3>
+    <p>Заполните форму и наш менеджер свяжется с вами в течение 5 минут</p>
+
+    <form action="sendmail.php" class="row form callback-form" method="post">
+
+      <input type="hidden" name="subject" value="Обратный звонок">
+
+      <div class="col-sm-12 form-group">
+        <input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
+      </div>
+
+      <div class="col-sm-12 form-group">
+        <input type="tel" name="phone" class="form__field" required placeholder="+38 (___) ___-__-__" pattern="\+38\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+      </div>
+
+      <div class="col-sm-12 form-group">
+        <input type="submit" class="btn form__btn" name="submit" value="Записаться">
+      </div>
+
+    </form>
+</div>
+
+<div class = "main-form modal modal--service" id="woman-cosmetology">
+  <form action="sendmail.php" class="form modal-form" method="post">
+  <div class="main-form__content">
+  <h5>Неодимовый лазер</h5>
+  <div class="main__offers">
+    <h4>
+      Выберете услугу
+    </h4>
+    <button class="modal__close woman-cosmetology_close">
+      <span class="modal__close-line"></span>
+      <div class="modal__container"></div>
+    </button>
+      <select>
+        <option data-id="1" value="1">Лазерная эпиляция темных волос</option>
+        <option data-id="2" value="2">Лазерное удаление сосудов</option>
+        <option data-id="3" value="3">Лазерное глубокое дермальное омоложение</option>
+        <option data-id="4" value="4">Карбоновый пилинг</option>
+        <option data-id="5" value="5">Лазерное лечение онихомикоза</option>
+      </select>
+        <input type="hidden" name="subject" value="Женская косметология">
+        <div class="content" id="2">
+        <ul>
+          <li><input type="checkbox" id="check" name="check" />
+            <label for="check">Удаление купероза щёки</label>
+          </li>
+          <li><input type="checkbox" id="check2" name="check2" />
+            <label for="check2">Удаление купероза (лицо полностью)</label>
+          </li>
+          <li><input type="checkbox" id="check3" name="check3" />
+            <label for="check3">Удаление сосудов (крылья носа )</label>
+          </li>
+          <li><input type="checkbox" id="check4" name="check4" />
+            <label for="check4">Единичная сосудистая звездочка (1мм)</label>
+          </li>
+          <li><input type="checkbox" id="check5" name="check5" />
+            <label for="check5">Купероз – нос полностью</label>
+          </li>
+        </ul>
+        </div>
+         <div class="content" id="3">
+        <ul>
+          <li><input type="checkbox" id="check6" name="check" />
+            <label for="check6">Лазерное омоложение лица</label>
+          </li>
+          <li><input type="checkbox" id="check7" name="check2" />
+            <label for="check7">Лазерное омоложение шеи + декольте</label>
+          </li>
+          <li><input type="checkbox" id="check8" name="check3" />
+            <label for="check8">Лазерное омоложение лица+ шеи+ декольте</label>
+          </li>
+        </ul>
+        </div>
+        <div class="content" id="4">
+        <ul>
+          <li><input type="checkbox" id="check9" name="check" />
+            <label for="check9">Лазерный карбоновый пилинг  лица </label>
+          </li>
+          <li><input type="checkbox" id="check10" name="check2" />
+            <label for="check10">Лазерный карбоновый пилинг шеи </label>
+          </li>
+          <li><input type="checkbox" id="check11" name="check3" />
+            <label for="check11">Лазерный карбоновый пилинг декольте</label>
+          </li>
+          <li><input type="checkbox" id="check12" name="check3" />
+            <label for="check12">Лазерный карбоновый пилинг (лицо + шея)</label>
+          </li>
+          <li><input type="checkbox" id="check13" name="check3" />
+            <label for="check13">Лазерный карбоновый пилинг( шея+ декольте )</label>
+          </li>
+          <li><input type="checkbox" id="check15" name="check3" />
+            <label for="check15">Лазерный карбоновый пилинг кистей рук</label>
+          </li>
+          <li><input type="checkbox" id="check16" name="check3" />
+            <label for="check16">Лазерный карбоновый пилинг (лицо+шея+декольте )</label>
+          </li>
+          <li><input type="checkbox" id="check17" name="check3" />
+            <label for="check17">Лазерный карбоновый пилинг (лицо+шея+декольте+кисти  рук)</label>
+          </li>
+        </ul>
+        </div>
+          <div class="content" id="5">
+        <ul>
+          <li><input type="checkbox" id="check18" name="check" />
+            <label for="check18">Ноготь кисти рук (1 единица)</label>
+          </li>
+          <li><input type="checkbox" id="check19" name="check2" />
+            <label for="check19">2 единицы</label>
+          </li>
+          <li><input type="checkbox" id="check20" name="check3" />
+            <label for="check20">Кисть полностью (5 единиц)</label>
+          </li>
+          <li><input type="checkbox" id="check21" name="check3" />
+            <label for="check21">Две кисти полностью</label>
+          </li>
+          <li><input type="checkbox" id="check22" name="check3" />
+            <label for="check22">Ноготь большого пальца стопы (1 единица)</label>
+          </li>
+          <li><input type="checkbox" id="check23" name="check3" />
+            <label for="check23">2 единицы</label>
+          </li>
+          <li><input type="checkbox" id="check24" name="check3" />
+            <label for="check24">Ногтевые пластины 2х стоп (полностью)</label>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div class="offers__btn">
+          <div>
+            <input type="text" class="header__input" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div>
+            <input type="tel" name="phone"  class="header__input form_phone" required placeholder="+38 (___) ___-__-__" pattern="\+38\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+          </div>
+
+           <button type="submit" class="header__top-btn-white">Записаться</button>
+        </div>
+  </div>
+  </form>
+</div>  
+
+<div class = "main-form modal modal--service" id="woman-cosmetologies">
+  <form action="sendmail.php" class="form modal-form" method="post">
+  <div class="main-form__content">
+  <h5>Александритовый лазер</h5>
+  <div class="main__offers">
+    <h4>
+      Выберете услугу
+    </h4>
+    <button class="modal__close woman-cosmetologies_close">
+      <span class="modal__close-line"></span>
+      <div class="modal__container"></div>
+    </button>
+      <select>
+        <option data-id="6" value="6">Лазерная эпиляция светлых волос</option>
+        <option data-id="7" value="7">Лазерное удаление пигментации</option>
+      </select>
+        <input type="hidden" name="subject" value="Женская косметология">
+  </div>
+  <div class="offers__btn">
+          <div>
+            <input type="text" class="header__input" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div>
+            <input type="tel" name="phone"  class="header__input form_phone" required placeholder="+38 (___) ___-__-__" pattern="\+38\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+          </div>
+
+           <button type="submit" class="header__top-btn-white">Записаться</button>
+        </div>
+  </div>
+
+  </form>
+</div> 
+
+
+<div class = "main-form modal modal--service" id="woman-cosmetologic">
+  <form action="sendmail.php" class="form modal-form" method="post">
+  <div class="main-form__content">
+  <h5>Со2 лазер, Фраксель</h5>
+  <div class="main__offers">
+    <h4>
+      Выберете услугу
+    </h4>
+    <button class="modal__close woman-cosmetologic_close">
+      <span class="modal__close-line"></span>
+      <div class="modal__container"></div>
+    </button>
+
+    <select>
+      <option data-id="22" value="22">Удаление новобразований на коже</option>
+      <option data-id="23" value="23">Фракционное лазерное омоложение</option>
+      <option data-id="24" value="24">Лазерная шлифовка рубцов и постакне</option>
+      <option data-id="25" value="25">Лазерная эстетическая гинекология</option>
+    </select>
+
+        <input type="hidden" name="subject" value="Женская косметология">
+
+    <div class="content" id="22">
+      <ul>
+        <li><input type="checkbox" id="check25" name="check" />
+          <label for="check25">Удаление мелкой папилломы</label>
+        </li>
+        <li><input type="checkbox" id="check26" name="check2" />
+          <label for="check26">Удаление множественных папиллом (20 мин) 
++ 10 мин консультация
+</label>
+        </li>
+        <li><input type="checkbox" id="check27" name="check3" />
+          <label for="check27">Удаление папилломы, фибромы, невуса, бородавки 
+до 5 мм (за единицу)
+</label>
+        </li>
+        <li><input type="checkbox" id="check28" name="check4" />
+          <label for="check28">Удаление папиллом, кондилом 
+в аногенитальной области 
+</label>
+        </li>
+        <li><input type="checkbox" id="check29" name="check5" />
+          <label for="check29">Удаление папиллом на веках</label>
+        </li>
+        <li><input type="checkbox" id="check30" name="check5" />
+          <label for="check30">Удаление кератомы</label>
+        </li>
+        <li><input type="checkbox" id="check31" name="check5" />
+          <label for="check31">Удаление ксантилазмы</label>
+        </li>
+        <li><input type="checkbox" id="check32" name="check5" />
+          <label for="check32">Гистологическое исследование</label>
+        </li>
+         <li><input type="checkbox" id="check33" name="check5" />
+          <label for="check33">Анастезия</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="offers__btn">
+          <div>
+            <input type="text" class="header__input" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div>
+            <input type="tel" name="phone"  class="header__input form_phone" required placeholder="+38 (___) ___-__-__" pattern="\+38\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+          </div>
+
+           <button type="submit" class="header__top-btn-white">Записаться</button>
+        </div>
+  </div>
+  </form>
+</div>  
+<div class = "main-form modal modal--service" id="woman-cosmetology5">
+  <form action="sendmail.php" class="form modal-form" method="post">
+  <div class="main-form__content">
+  <h5>Консультации врачей</h5>
+  <div class="main__offers">
+    <h4>
+      Выберете услугу
+    </h4>
+    <button class="modal__close woman-cosmetology5_close">
+      <span class="modal__close-line"></span>
+      <div class="modal__container"></div>
+    </button>
+      <select>
+        <option data-id="26" value="26">Гинеколог-эндокринолог (лечение патологии шейки матки, кольпоскопия)</option>
+        <option data-id="27" value="27">Дерматовенеролог</option>
+        <option data-id="28" value="28">Трихолог</option>
+        <option data-id="29" value="29">Косметолог</option>
+        <option data-id="30" value="30">Терапевт</option>
+        <option data-id="31" value="31">Диетолог</option>
+        <option data-id="32" value="32">Массажист</option>
+      </select>
+        <input type="hidden" name="subject" value="Женская косметология">
+        <div class="content" id="26">
+          <ul>
+            <li>
+              <input type="checkbox" id="check34" name="check" />
+              <label for="check34">Лечение трихомонадного кольпита</label>
+            </li>
+            <li>
+              <input type="checkbox" id="check35" name="check2" />
+              <label for="check35">Лечение бактериального  вагиноза (гарднереллез)</label>
+            </li>
+            <li>
+              <input type="checkbox" id="check36" name="check3" />
+              <label for="check36">Лечение хламидиоза</label>
+            </li>
+            <li>
+              <input type="checkbox" id="check37" name="check4" />
+              <label for="check37">Лечение уреаплазмоза, микоплазмоза</label>
+            </li>
+            <li>
+              <input type="checkbox" id="check38" name="check5" />
+              <label for="check38">Лечение вагинального кандидоза</label>
+            </li>
+          </ul>
+        </div>
+        <div class="content" id="27">
+          <ul>
+            <li>
+              <input type="checkbox" id="check39" name="check6" />
+              <label for="check39">Консультация дерматовенеролога</label>
+            </li>
+          </ul>
+        </div>
+        <div class="offers__btn">
+          <div>
+            <input type="text" class="header__input" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div>
+            <input type="tel" name="phone"  class="header__input form_phone" required placeholder="+38 (___) ___-__-__" pattern="\+38\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+          </div>
+
+           <button type="submit" class="header__top-btn-white">Записаться</button>
+        </div>
+    </div>
+  </form>
+</div>
+
+<div class = "main-form modal modal--service" id="woman-cosmetology6">
+  <form action="sendmail.php" class="form modal-form" method="post">
+  <div class="main-form__content">
+  <h5>Мужская косметология</h5>
+  <div class="main__offers">
+    <h4>
+      Выберете услугу
+    </h4>
+    <button class="modal__close woman-cosmetology6_close">
+      <span class="modal__close-line"></span>
+      <div class="modal__container"></div>
+    </button>
+      <select>
+        <option data-id="33" value="33">Чистка лица</option>
+        <option data-id="34" value="34">Карбокситерапия</option>
+        <option data-id="35" value="35">Лечебный массаж</option>
+        <option data-id="36" value="36">Лазерное удаление сосудов</option>
+        <option data-id="37" value="37">Лазерная эпиляция для мужчин</option>
+      </select>
+        <input type="hidden" name="subject" value="Женская косметология">
+         <div class="content" id="33">
+        <ul>
+          <li><input type="checkbox" id="check90" name="check6" />
+            <label for="check90">Демакияж</label>
+          </li>
+          <li><input type="checkbox" id="check41" name="check6" />
+            <label for="check41">Разогревающая процедура</label>
+          </li>
+          <li><input type="checkbox" id="check42" name="check6" />
+            <label for="check42">Ультрозвуковая чистка</label>
+          </li>
+          <li><input type="checkbox" id="check43" name="check6" />
+            <label for="check43">Механическая чистка</label>
+          </li>
+          <li><input type="checkbox" id="check44" name="check6" />
+            <label for="check44">Дарсонваль</label>
+          </li>
+           <li><input type="checkbox" id="check45" name="check6" />
+            <label for="check45">Скатка</label>
+          </li>
+           <li><input type="checkbox" id="check46" name="check6" />
+            <label for="check46">Маска успокаивающая, абсорбирующая, дезинфецирующая</label>
+          </li>
+           <li><input type="checkbox" id="check47" name="check6" />
+            <label for="check47">Массаж Шиацу</label>
+          </li>
+           <li><input type="checkbox" id="check48" name="check6" />
+            <label for="check48">Нанесение увлажняющего крема</label>
+          </li>
+        </ul>
+        </div>
+            <div class="content" id="34">
+        <ul>
+          <li><input type="checkbox" id="check49" name="check6" />
+            <label for="check49">Лицо</label>
+          </li>
+          <li><input type="checkbox" id="check50" name="check6" />
+            <label for="check50">Лицо + шея + декольте</label>
+          </li>
+          <li><input type="checkbox" id="check51" name="check6" />
+            <label for="check51">Кисти рук</label>
+          </li>
+          <li><input type="checkbox" id="check52" name="check6" />
+            <label for="check52">Лицо + шея + декольте + кисти рук</label>
+          </li>
+        </ul>
+        </div>
+         <div class="content" id="36">
+        <ul>
+          <li><input type="checkbox" id="check53" name="check6" />
+            <label for="check53">Удаление купероза щёки</label>
+          </li>
+          <li><input type="checkbox" id="check54" name="check6" />
+            <label for="check54">Удаление купероза (лицо полностью)</label>
+          </li>
+          <li><input type="checkbox" id="check55" name="check6" />
+            <label for="check55">Удаление сосудов (крылья носа )</label>
+          </li>
+          <li><input type="checkbox" id="check56" name="check6" />
+            <label for="check56">Купероз – нос полностью</label>
+          </li>
+        </ul>
+        </div>
+        <div class="offers__btn">
+          <div>
+            <input type="text" class="header__input" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div>
+            <input type="tel" name="phone"  class="header__input form_phone" required placeholder="+38 (___) ___-__-__" pattern="\+38\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+          </div>
+
+           <button type="submit" class="header__top-btn-white">Записаться</button>
+        </div>
+    </div>
+  </form>
+</div>
+
+<div class = "main-form modal modal--service" id="woman-cosmetology8">
+  <form action="sendmail.php" class="form modal-form" method="post">
+  <div class="main-form__content">
+  <h5>Женская косметология</h5>
+  <div class="main__offers">
+    <h4>
+      Выберете услугу
+    </h4>
+    <button class="modal__close woman-cosmetology8_close">
+      <span class="modal__close-line"></span>
+      <div class="modal__container"></div>
+    </button>
+      <select>
+        <option data-id="37" value="37">Чистка лица</option>
+        <option data-id="38" value="38">Карбокситерапия</option>
+        <option data-id="39" value="39">Аппаратная косметология</option>
+        <option data-id="40" value="40">Инъекционная косметология</option>
+      </select>
+        <input type="hidden" name="subject" value="Женская косметология">
+         <div class="content" id="37">
+        <ul>
+          <li><input type="checkbox" id="check91" name="check6" />
+            <label for="check91">Демакияж</label>
+          </li>
+          <li><input type="checkbox" id="check57" name="check6" />
+            <label for="check57">Разогревающая процедура</label>
+          </li>
+          <li><input type="checkbox" id="check58" name="check6" />
+            <label for="check58">Ультрозвуковая чистка</label>
+          </li>
+          <li><input type="checkbox" id="check59" name="check6" />
+            <label for="check59">Механическая чистка</label>
+          </li>
+          <li><input type="checkbox" id="check60" name="check6" />
+            <label for="check60">Дарсонваль</label>
+          </li>
+          <li><input type="checkbox" id="check61" name="check6" />
+            <label for="check61">Скатка</label>
+          </li>
+          <li><input type="checkbox" id="check62" name="check6" />
+            <label for="check62">Маска успокаивающая, абсорбирующая, дезинфецирующая</label>
+          </li>
+          <li><input type="checkbox" id="check63" name="check6" />
+            <label for="check63">Массаж Шиацу</label>
+          </li>
+          <li><input type="checkbox" id="check64" name="check6" />
+            <label for="check64">Нанесение увлажняющего крема</label>
+          </li>
+        </ul>
+        </div>
+          <div class="content" id="38">
+        <ul>
+          <li><input type="checkbox" id="check65" name="check6" />
+            <label for="check65">Лицо</label>
+          </li>
+          <li><input type="checkbox" id="check66" name="check6" />
+            <label for="check66">Лицо + шея + декольте</label>
+          </li>
+          <li><input type="checkbox" id="check67" name="check6" />
+            <label for="check67">Кисти рук</label>
+          </li>
+          <li><input type="checkbox" id="check68" name="check6" />
+            <label for="check68">Лицо + шея + декольте + кисти рук </label>
+          </li>
+        </ul>
+        </div>
+
+        <div class="content" id="39">
+        <ul>
+          <li><input type="checkbox" id="check69" name="check6" />
+            <label for="check69">Ультрозвуковая чистка</label>
+          </li>
+          <li><input type="checkbox" id="check70" name="check6" />
+            <label for="check70">Микродермабразия (алмазная шлифовка)</label>
+          </li>
+          <li><input type="checkbox" id="check71" name="check6" />
+            <label for="check71">Криотерапия</label>
+          </li>
+          <li><input type="checkbox" id="check72" name="check6" />
+            <label for="check72">Светолечение</label>
+          </li>
+          <li><input type="checkbox" id="check73" name="check6" />
+            <label for="check73">Фонофорез</label>
+          </li>
+          <li><input type="checkbox" id="check74" name="check6" />
+            <label for="check74">Микротоки (20 минут)</label>
+          </li>
+        </ul>
+        </div>
+
+        <div class="offers__btn">
+          <div>
+            <input type="text" class="header__input" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div>
+            <input type="tel" name="phone"  class="header__input form_phone" required placeholder="+38 (___) ___-__-__" pattern="\+38\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+          </div>
+
+           <button type="submit" class="header__top-btn-white">Записаться</button>
+        </div>
+    </div>
+  </form>
+</div>
+
+<div class = "main-form modal modal--service" id="woman-cosmetology7">
+  <form action="sendmail.php" class="form modal-form" method="post">
+  <div class="main-form__content">
+  <h5>Лечебный массаж</h5>
+  <div class="main__offers">
+    <h4>
+      Выберете услугу
+    </h4>
+    <button class="modal__close woman-cosmetology7_close">
+      <span class="modal__close-line"></span>
+      <div class="modal__container"></div>
+    </button>
+      <select>
+        <option data-id="40" value="40">Массаж тела</option>
+        <option data-id="41" value="41">Массаж лица</option>
+      </select>
+        <input type="hidden" name="subject" value="Женская косметология">
+         <div class="content" id="40">
+        <ul>
+          <li><input type="checkbox" id="check75" name="check6" />
+            <label for="check75">Демакияж</label>
+          </li>
+        </ul>
+        </div>
+         <div class="content" id="40">
+        <ul>
+          <li><input type="checkbox" id="check76" name="check6" />
+            <label for="check76">Массаж релаксирующий</label>
+          </li>
+          <li><input type="checkbox" id="check77" name="check6" />
+            <label for="check77">Массаж глаз</label>
+          </li>
+          <li><input type="checkbox" id="check78" name="check6" />
+            <label for="check78">Испанский массаж</label>
+          </li>
+          <li><input type="checkbox" id="check79" name="check6" />
+            <label for="check79">Лимфодренаж</label>
+          </li>
+          <li><input type="checkbox" id="check80" name="check6" />
+            <label for="check80">Массаж  Шиацу</label>
+          </li>
+        </ul>
+        </div>
+        <div class="offers__btn">
+          <div>
+            <input type="text" class="header__input" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div>
+            <input type="tel" name="phone"  class="header__input form_phone" required placeholder="+38 (___) ___-__-__" pattern="\+38\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+          </div>
+
+           <button type="submit" class="header__top-btn-white">Записаться</button>
+        </div>
+    </div>
+  </form>
+</div>
+
+<div class = "main-form modal modal--service" id="woman-cosmetology8">
+  <form action="sendmail.php" class="form modal-form" method="post">
+  <div class="main-form__content">
+  <h5>Женская косметология</h5>
+  <div class="main__offers">
+    <h4>
+      Выберете услугу
+    </h4>
+    <button class="modal__close woman-cosmetology8_close">
+      <span class="modal__close-line"></span>
+      <div class="modal__container"></div>
+    </button>
+      <select>
+        <option data-id="28" value="28">Чистка лица</option>
+        <option data-id="29" value="29">Дерматовенеролог</option>
+        <option data-id="30" value="30">Трихолог</option>
+        <option data-id="31" value="31">Косметолог</option>
+        <option data-id="32" value="32">Терапевт</option>
+        <option data-id="33" value="33">Диетолог</option>
+        <option data-id="34" value="34">Массажист</option>
+      </select>
+        <input type="hidden" name="subject" value="Женская косметология">
+         <div class="content" id="28">
+        <ul>
+          <li><input type="checkbox" id="check81" name="check6" />
+            <label for="check81">Демакияж</label>
+          </li>
+        </ul>
+        </div>
+        <div class="offers__btn">
+          <div>
+            <input type="text" class="header__input" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div>
+            <input type="tel" name="phone"  class="header__input form_phone" required placeholder="+38 (___) ___-__-__" pattern="\+38\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+          </div>
+
+           <button type="submit" class="header__top-btn-white">Записаться</button>
+        </div>
+    </div>
+  </form>
+</div>
+
+<div class = "main-form modal modal--service" id="woman-cosmetology9">
+  <form action="sendmail.php" class="form modal-form" method="post">
+  <div class="main-form__content">
+  <h5>Лечебный массаж</h5>
+  <div class="main__offers">
+    <h4>
+      Выберете услугу
+    </h4>
+    <button class="modal__close woman-cosmetology9_close">
+      <span class="modal__close-line"></span>
+      <div class="modal__container"></div>
+    </button>
+      <select>
+        <option data-id="35" value="35">Массаж тела</option>
+        <option data-id="36" value="36">Массаж лица</option>
+      </select>
+        <input type="hidden" name="subject" value="Женская косметология">
+         <div class="content" id="36">
+        <ul>
+          <li><input type="checkbox" id="check82" name="check6" />
+            <label for="check82">Массаж релаксирующий</label>
+          </li>
+          <li><input type="checkbox" id="check83" name="check6" />
+            <label for="check83">Массаж глаз</label>
+          </li>
+          <li><input type="checkbox" id="check84" name="check6" />
+            <label for="check84">Испанский массаж</label>
+          </li>
+          <li><input type="checkbox" id="check85" name="check6" />
+            <label for="check85">Лимфодренаж</label>
+          </li>
+          <li><input type="checkbox" id="check86" name="check6" />
+            <label for="check86">Массаж  Шиацу</label>
+          </li>
+        </ul>
+        </div>
+
+       <div class="offers__btn">
+          <div>
+            <input type="text" class="header__input" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div>
+            <input type="tel" name="phone"  class="header__input form_phone" required placeholder="+38 (___) ___-__-__" pattern="\+38\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+          </div>
+
+           <button type="submit" class="header__top-btn-white">Записаться</button>
+        </div>
+      
+    </div>
+  </form>
+</div>
+
+
+
+<div id="thanks" class="modal">
+  <button class="thanks_close modal__close">
+    Close
+    <span class="modal__close-line"></span>
+  </button>
+  <h3>Спасобо за заказ</h3>
+  <p>Скоро мы Вам перезвоним!</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
